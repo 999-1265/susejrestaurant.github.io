@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Susej Restaurant</title>
+        <style>
+            body{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            }
+
+            .main{
+            width: 100%;
+            }
+
+            nav{
+            width:100%;
+            height: 80px;
+            line-height: 80px;
+            display: flex;
+            justify-content: space-between;
+            }
+
+            .logo a{
+            margin-left: 60px;
+            font-size: 40px;
+            color: red;
+            font-weight: bold;
+            }
+            a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            transition: 0.5s all ease;
+            }
+
+            ul{
+            margin: 0px;
+            margin-right: 60px;
+            }
+            ul li{
+            float:left;
+            padding: 0px 10px;
+            list-style: none;
+            }
+            ul li a:hover{
+            color: red;
+            }
+
+            .header{
+            background-image: url('food1.jpeg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            }
+
+            .content{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+            }
+            .content h1{
+            font-size: 40px;
+            }
+
+            .content p{
+            padding: 0px 50px;
+            font-size: 20px;
+            }
+            .food-wrapper{
+                background-color: #fff;
+                border-radius: 15px;
+                width: 300px;
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-top: 50px;
+                display:inline-block;
+                position: sticky;
+            }
+            .food-wrapper .button{
+            background: none;
+            border: 1px solid #fff;
+            border-color: red;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 25px;
+            border-radius: 10px;
+            transition: 0.5s all ease;
+            
+            }
+
+            .food-wrapper button:hover{
+            background:red;
+            }
+
+            footer {
+            text-align: right;
+            font-size: 25px;
+            padding: 25px;
+            background-color: black;
+            color: white;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div class="main">
+            <div class="wrapper">
+                <div class="header">
+                    <nav>
+                        <div class="logo">
+                            <a href="index.html">Susej Restaurant</a>
+                        </div>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="menu.html">MENU</a></li>
+                            <li><a href="service.html">SERVICES</a></li>
+                            <li><a href="about.html">ABOUT US</a></li>
+                            <li><a href="contact.html">CONTACT US</a></li>
+                        </ul>
+                    </nav>
+                    <div class="food-wrapper">
+                        <div class="food">
+                            <img src="food0.jpg" style="width: 300px">
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="food-wrapper">
+                        <div class="food">
+                            <img src="food1.jpg" style="width: 300px">
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="food-wrapper">
+                        <div class="food">
+                            <img src="food2.jpg" style="width: 300px">
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="food-wrapper">
+                        <div class="food">
+                            <img src="food3.jpg" style="width: 300px">
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="food-wrapper">
+                        <div class="food">
+                            <img src="food4.jpg" style="width: 300px">
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="food-wrapper">
+                        <div class="food">
+                            <img src="food5.jpg" style="width: 300px">
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <em>Philippines Time: <div id="clock"></div></em>
+            <script src="./main.js"></script>
+        </footer>
+    </body>
+</html>
